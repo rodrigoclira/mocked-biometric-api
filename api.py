@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 ENDPOINT = "http://127.0.0.1:5000"
 TOKEN_EXAMPLE = "0facc635-30a1-4bb0-a09d-24b2fe867af3"
 
